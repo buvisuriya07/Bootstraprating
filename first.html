@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shop Homepage</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .disabled {
+            opacity: 0.5;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Add your header content here -->
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <!-- Add your navigation content here -->
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3">
+                <h1 class="my-4">Shop Name</h1>
+                <!-- Add your sidebar content here -->
+            </div>
+            <!-- /.col-lg-3 -->
+
+            <div class="col-lg-9">
+                <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+                    <!-- Add your carousel content here -->
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <!-- Add your card content here -->
+                            <div class="card-body">
+                                <h4 class="card-title">Item 1</h4>
+                                <h5>$24.99</h5>
+                                <p class="card-text">Description of Item 1</p>
+                                <button id="addToCartButton-1" class="btn btn-primary" onclick="addToCart(1)">Add to Cart</button>
+                                <button id="removeFromCartButton-1" class="btn btn-danger disabled" onclick="removeFromCart(1)">Remove from Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 -->
+
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card h-100">
+                            <!-- Add your card content here -->
+                            <div class="card-body">
+                                <h4 class="card-title">Item 2</h4>
+                                <h5>$19.99</h5>
+                                <p class="card-text">Description of Item 2</p>
+                                <button id="addToCartButton-2" class="btn btn-primary" onclick="addToCart(2)">Add to Cart</button>
+                                <button id="removeFromCartButton-2" class="btn btn-danger disabled" onclick="removeFromCart(2)">Remove from Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.col-lg-4 -->
+
+                    <!-- Add more card items here -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.col-lg-9 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+
+    <footer class="py-5 bg-dark">
+        <!-- Add your footer content here -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
